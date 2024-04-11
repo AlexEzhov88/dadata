@@ -1,0 +1,17 @@
+spring:
+  profiles:
+    active: dev
+logging:
+  level:
+    org.springframework.web: TRACE
+    ru.liga.springhomework: DEBUG
+dadata:
+  api:
+    base-url: https://dadata.ru/api/v2/suggest
+    token: ${DADATA_API_TOKEN}
+rest:
+  template:
+    connect:
+      timeout: 10000
+    read:
+      timeout: 15000
